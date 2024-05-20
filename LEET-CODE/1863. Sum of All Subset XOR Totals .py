@@ -1,12 +1,8 @@
 class Solution:
     def subsetXORSum(self, nums) :
-        self.Totalsum=0
-        n=len(nums)-1
-        def subset(nums,index,n,temp):
-            if index > n:
-                self.Totalsum+=temp
-                return
-            subset(nums,index+1,n,temp^nums[index])
-            subset(nums,index+1,n,temp)
-        subset(nums,0,n,0)
-        return self.Totalsum
+        n=len(nums)
+        def subset(index,temp):
+            if index == n:
+                return temp
+            return subset(index+1,temp^nums[index])+subset(index+1,temp)
+        return subset(0,0)
