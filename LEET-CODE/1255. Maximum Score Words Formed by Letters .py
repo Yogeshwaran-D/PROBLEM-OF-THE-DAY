@@ -1,3 +1,5 @@
+from typing import Counter
+
 class Solution:
     def maxScoreWords(self, words, letters, score) :
         new_dict=Counter(letters)
