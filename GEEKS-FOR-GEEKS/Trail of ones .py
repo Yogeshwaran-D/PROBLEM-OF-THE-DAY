@@ -11,9 +11,3 @@ class Solution:
 
         return ans[-1]
 
-        
-
-
-
-s=Solution()
-print(s.numberOfConsecutiveOnes(5))
