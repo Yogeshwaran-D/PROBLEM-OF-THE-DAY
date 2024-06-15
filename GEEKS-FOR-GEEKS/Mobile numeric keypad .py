@@ -20,7 +20,7 @@ class Solution:
                 return self.memo[(lastKey,length)]
             count=0
             for i in self.moves[lastKey]:
-                count+=dp(i,lenght+1)
+                count+=dp(i,length+1)
             self.memo[(lastKey,length)] = count
             return count
         res=0
