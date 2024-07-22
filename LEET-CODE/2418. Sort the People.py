@@ -1,5 +1,5 @@
 class Solution:
-    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+    def sortPeople(self, names, heights) :
         new_dict={}
         n=len(heights)
         for i in range(n):
