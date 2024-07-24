@@ -1,5 +1,5 @@
 class Solution:
-    def sortJumbled(self, mapping: List[int], nums: List[int]) -> List[int]:
+    def sortJumbled(self, mapping nums) :
         mapped_dict={}
         res=[]
         for num in nums:
